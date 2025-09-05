@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Krona+One&family=Nosifer&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color:#DC143C; /*colores aqui :3 https://www.cdmon.com/es/apps/tabla-colores*/
+  font-family: Helvetica, Arial, sans-serif; /* esto quiere decir que ocupe las fuentes que sean helvetica, sino tal sino tal*/
+}
+
+a{ 
+  color: #f00; /* esto es para cambiar el color en a en este caso un vinculo*/
+  text-decoration: none;
+  transition: all ease 1s; /*no usar , sino . por ejemplo 1s o 1.5*/
+}
+
+a[href$=".pdf"]{
+  color: black;
+}
+
+h1{
+  font-size: calc(1rem + 5vw);
+}
+
+a:hover{ /*esto hace que solo cambie mientras se pasa el cursor*/
+  color: #c55;
+  text-decoration: underline;
+  transition: all ease 1s;
+  /*esto es estar en un estado particular, un hover es un estado de visitado, por asi decirlo*/
+}
+
+a:hover:after{ /*traduccion:cuando el vinculo tiene el cursor encima despues aparece el contenido que es... 💖*/
+  content:"  💖💖💖";
+}
+
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(80% - 4rem);
+    padding: 2rem;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.6); /*estos colores rgb van del 0-255 y el alpha (a) del 0-1*/
+    border-radius: 1rem;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+   /* En este caso para ordenar se clasifica main como bloque, pero se acota todo poniendo solo el bloque*/
+}
+
+.halloween { /*esto es solo si le quiero cambiar a un apartado preciso en este caso a hola mundito que esta en h1*/
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* por ejemplo en este caso las fuentes se aplican a la clase halloween pero tmb puedo usar h1, a, main, etc, pero se acota todo poniendo solo clase*/
+}
+
+.ajuste{
+  font-size: 120%;
+}
+
+/*esto es un comentario de varios renglones en css comienza con.... 
+canvas { 
+  display: block;
+}
+
+y termina con...*/
